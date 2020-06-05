@@ -83,9 +83,10 @@ export default {
         const ad = {
           title: this.title,
           description: this.description,
-          promo: this.promo
+          promo: this.promo,
+          imageSrc: 'https://vjoy.cc/wp-content/uploads/2019/09/1-2.jpg'
         }
-        console.log(ad)
+        this.$store.dispatch('createAd', ad)
       }
     }
   }
